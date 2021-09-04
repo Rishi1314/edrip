@@ -1,0 +1,291 @@
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    overflow-x: hidden;
+
+}
+/*navbar*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1%;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    background-color: white;
+
+}
+.navlinks a{
+    text-decoration: none;
+    color: black;
+}
+.navlinks a:hover{
+    text-decoration: underline;
+    color: rgb(153, 153, 153);
+}
+.navlinks li{
+    list-style: none;
+}
+.logo{
+    width: 60px;
+    transform: translateX(200%);
+}
+
+.burger{
+    display: none;
+    padding-bottom: 2%;
+}
+
+.line1{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+.line02{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+.line3{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+.burger:hover{
+    cursor: pointer;
+}
+@media screen and (max-width:1000px){
+    .burger{
+        display: block;
+    }
+    .navlinks{
+        position: absolute;
+        transform: translateY(-200%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 60vh;
+        top: 10%;
+        transition: transform 0.5s ease-in;
+    }
+    .deptitems{
+        justify-content: center;
+    
+    }
+    .frontpage{
+        flex-wrap: wrap;
+    }
+    .execcarddeck{
+        flex-wrap: wrap;
+    }
+}
+
+.nav-active{
+    transform: translateY(0%);
+}
+
+/*front page*/
+.aboutus{
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    
+    background-color: #dbf5ff;
+}
+.aboutusitems{
+    padding: 5%;
+}
+.aboutus div{
+    margin: 5%;
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+}
+.line{
+    background-color: blueviolet;
+    width: 70px;
+    height: 5px;
+    border-radius: 10%;
+    display: inline-block;
+    margin: 5%;
+}
+.line2{
+    background-color: blueviolet;
+    width: 70px;
+    height: 3px;
+    border-radius: 10%;
+    display: inline-block;
+}
+#as{
+    text-decoration: none;
+    color: gray;
+    font-size: large;
+}
+.contactbutt{
+    background-color: rgb(138, 96, 252);
+}
+.frontpage{
+
+    background-color: #E6E6FA;
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+}
+.frontpage div{
+    margin: 5%;
+}
+
+.frontpage img{
+    margin: 5%;
+    width: 80%;
+}
+.ourdept{
+    background-color:#ffcbad;
+    padding-top: 5%;
+}
+#ourdepttext{
+    margin: 0% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#aim{
+    width: 50%;
+}
+.deptitems{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.deptcards img{
+    width: 50%;
+}
+.deptcards{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color:#E6E6FA ;
+    display:flex;
+    flex-direction: column;
+    width: 250px;
+    height: 400px;
+    margin: 4%;
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #f6e3ff;
+}
+.stats{
+    padding:5% 0% ;
+    text-align: center;
+}
+.exectext{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.execline{
+    background-color: blueviolet;
+    width: 70px;
+    height: 5px;
+    border-radius: 10%;
+    display: inline-block;
+    padding-left: 20%;
+    margin-left: 7%;
+}
+.exectext p{
+    width: 50%;
+}
+.execcarddeck{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.execcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+.execboard{
+    background-color: #FFF8DC;
+}
+.execcard img{
+    
+    width: 50%;
+
+}
+
+.final{
+    margin: 5%;
+}
+.finaltext{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 5%;
+    
+}
+
+.mapandform{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.form-group{
+    margin: 5%;
+}
+.syb{
+    margin: 5%;
+}
+.footerline{
+    display: block;
+    background-color: grey;
+    height: 30px;
+    width: 2px;
+    margin: 0 10px;
+}
+.footer1{
+    display: flex;
+    align-items: center;
+}
+.footlogo{
+    width: 5%;
+    border-radius: 50%;
+
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding:  0% 5%;
+    background-color: #FAF0E6;
+}
+.socmed{
+    display: flex;
+    width: 30%;
+}
+.socmed img{
+    margin: 5%;
+}
